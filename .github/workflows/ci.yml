@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+      - name: Build all released libraries (Mathlib from cache)
+        run: |
+          set -o pipefail
+          lake build 2>&1 | tee build.log
+          if grep -qE 'Building Mathlib\b' build.log; then
+            echo "ERROR: Mathlib rebuilt from source (cache miss)"; exit 1; fi
