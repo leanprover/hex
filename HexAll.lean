@@ -1,9 +1,13 @@
-import HexMatrix
-import HexMatrixMathlib
-import HexGramSchmidt
-import HexGramSchmidtMathlib
-import HexLLL
-import HexLLLMathlib
+module
+
+public import HexMatrix
+public import HexMatrixMathlib
+public import HexGramSchmidt
+public import HexGramSchmidtMathlib
+public import HexLLL
+public import HexLLLMathlib
+
+public section
 
 /-!
 `hex` — convenience aggregator for the released hex libraries.
