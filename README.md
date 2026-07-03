@@ -3,6 +3,8 @@
 Verified computational algebra in Lean 4: an aggregator for the released
 `hex` libraries.
 
+API documentation: <https://leanprover.github.io/hex/docs>
+
 Requiring this package pulls in the whole released `hex-lll-mathlib` closure
 at a single coherent pinned set. The Mathlib-free computational libraries
 (what used to be a single `HexMatrix` is now split into a matrix layer and
