@@ -8,32 +8,32 @@ defaultTargets = ["HexAll"]
 [[require]]
 name = "HexMatrix"
 git = "https://github.com/leanprover/hex-matrix.git"
-rev = "7359d9c53c3d85309b526dd1663a33b28a28bf50"
+rev = "db6b7f7aebf6d1fb193016cbc5b21214bf40ab68"
 
 [[require]]
 name = "HexMatrixMathlib"
 git = "https://github.com/leanprover/hex-matrix-mathlib.git"
-rev = "ba8b22af8a25fe7fa6db3b3637fdb1dca492c38a"
+rev = "9ccf1baf235ae8fe10733a279cffa96ff28236dd"
 
 [[require]]
 name = "HexGramSchmidt"
 git = "https://github.com/leanprover/hex-gram-schmidt.git"
-rev = "9033c5b917e8a7280cb1cd54af0546b64349a4c0"
+rev = "f5ba63bd84e4086b714375bf3600e4d8cbc67987"
 
 [[require]]
 name = "HexGramSchmidtMathlib"
 git = "https://github.com/leanprover/hex-gram-schmidt-mathlib.git"
-rev = "78cf8d7def9cee8d27c27641fd20059366f9f6b1"
+rev = "299142b3d62d6bf792345564074b70532fa304e2"
 
 [[require]]
 name = "HexLLL"
 git = "https://github.com/leanprover/hex-lll.git"
-rev = "72e42ed35d0907301b2a323988944404e5628feb"
+rev = "48cecff63ba2025f0171ac30f264618b97532413"
 
 [[require]]
 name = "HexLLLMathlib"
 git = "https://github.com/leanprover/hex-lll-mathlib.git"
-rev = "f1620294345421743f2a644b429de4ce8370a541"
+rev = "897db8cde6d98a5b02e5110e7167a73daebbe553"
 
 [[lean_lib]]
 name = "HexAll"
