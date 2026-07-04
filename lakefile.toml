@@ -1,5 +1,5 @@
 name = "hex"
-defaultTargets = ["HexAll"]
+defaultTargets = ["Hex"]
 
 # Aggregator: requires the full released hex-lll-mathlib closure at a single
 # coherent pinned SHA set. Require `hex` to depend on everything released; or
@@ -36,4 +36,4 @@ git = "https://github.com/leanprover/hex-lll-mathlib.git"
 rev = "2f577e09690a6a45cf845a50ab59af060a296b74"
 
 [[lean_lib]]
-name = "HexAll"
+name = "Hex"
