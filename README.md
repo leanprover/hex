@@ -3,40 +3,57 @@
 Verified computational algebra in Lean 4: an aggregator for the released
 `hex` libraries.
 
-API documentation: <https://leanprover.github.io/hex/docs>
+- Manual: <https://kim-em.github.io/hex-dev/>
+- API documentation: <https://leanprover.github.io/hex/docs>
 
-Requiring this package pulls in the whole released `hex-lll-mathlib` closure
-at a single coherent pinned set. The Mathlib-free computational libraries
-(what used to be a single `HexMatrix` is now split into a matrix layer and
-the row-reduction, determinant, and Bareiss libraries built on it):
+# Quickstart
 
-| Library | Repo |
-|---|---|
-| `HexBasic` | [hex-basic](https://github.com/kim-em/hex-basic) |
-| `HexMatrix` | [hex-matrix](https://github.com/kim-em/hex-matrix) |
-| `HexRowReduce` | [hex-row-reduce](https://github.com/kim-em/hex-row-reduce) |
-| `HexDeterminant` | [hex-determinant](https://github.com/kim-em/hex-determinant) |
-| `HexBareiss` | [hex-bareiss](https://github.com/kim-em/hex-bareiss) |
-| `HexGramSchmidt` | [hex-gram-schmidt](https://github.com/kim-em/hex-gram-schmidt) |
-| `HexLLL` | [hex-lll](https://github.com/kim-em/hex-lll) |
+Add to your `lakefile.toml`:
 
-and their Mathlib correspondence layers:
-
-| Library | Repo |
-|---|---|
-| `HexMatrixMathlib` | [hex-matrix-mathlib](https://github.com/kim-em/hex-matrix-mathlib) |
-| `HexRowReduceMathlib` | [hex-row-reduce-mathlib](https://github.com/kim-em/hex-row-reduce-mathlib) |
-| `HexDeterminantMathlib` | [hex-determinant-mathlib](https://github.com/kim-em/hex-determinant-mathlib) |
-| `HexBareissMathlib` | [hex-bareiss-mathlib](https://github.com/kim-em/hex-bareiss-mathlib) |
-| `HexGramSchmidtMathlib` | [hex-gram-schmidt-mathlib](https://github.com/kim-em/hex-gram-schmidt-mathlib) |
-| `HexLLLMathlib` | [hex-lll-mathlib](https://github.com/kim-em/hex-lll-mathlib) |
-
-```
-require hex from git "https://github.com/kim-em/hex.git" @ "<rev>"
+```toml
+[[require]]
+name = "hex"
+git = "https://github.com/leanprover/hex.git"
+rev = "main"
 ```
 
-To depend on just the Mathlib-free LLL, require
-[`hex-lll`](https://github.com/kim-em/hex-lll) directly.
+Then `import Hex` re-exports every library in the table below at a single
+coherent pinned set:
+
+```lean
+import Hex
+
+open Hex
+
+-- Exact, fraction-free integer determinant.
+def M : Matrix Int 3 3 := #m[2, 1, 1; 1, 2, 1; 1, 1, 2]
+#eval M.det   -- 4
+
+-- LLL: reduce an integer lattice basis and read off a provably short vector.
+-- The `by decide` arguments discharge the reduction-factor side conditions.
+def L : Matrix Int 3 3 := #m[1, 1, 1; 1, 0, 2; 3, 5, 6]
+#eval lllNative.firstShortVector L (3 / 4) (by decide +kernel) (by decide +kernel) (by decide)
+```
+
+To depend on just one piece, require that library directly (for example
+[`hex-lll`](https://github.com/leanprover/hex-lll) for the Mathlib-free LLL
+core) instead of the aggregator.
+
+# Libraries
+
+Each computational library is Mathlib-free; its Mathlib correspondence proofs
+and Mathlib-facing API, where they exist, live in a separate `*-mathlib`
+library.
+
+| Component | Computational | Mathlib layer |
+|---|---|---|
+| Foundations | [HexBasic](https://github.com/leanprover/hex-basic) | — |
+| Matrices | [HexMatrix](https://github.com/leanprover/hex-matrix) | [HexMatrixMathlib](https://github.com/leanprover/hex-matrix-mathlib) |
+| Row reduction | [HexRowReduce](https://github.com/leanprover/hex-row-reduce) | [HexRowReduceMathlib](https://github.com/leanprover/hex-row-reduce-mathlib) |
+| Determinants | [HexDeterminant](https://github.com/leanprover/hex-determinant) | [HexDeterminantMathlib](https://github.com/leanprover/hex-determinant-mathlib) |
+| Bareiss | [HexBareiss](https://github.com/leanprover/hex-bareiss) | [HexBareissMathlib](https://github.com/leanprover/hex-bareiss-mathlib) |
+| Gram-Schmidt | [HexGramSchmidt](https://github.com/leanprover/hex-gram-schmidt) | [HexGramSchmidtMathlib](https://github.com/leanprover/hex-gram-schmidt-mathlib) |
+| LLL | [HexLLL](https://github.com/leanprover/hex-lll) | [HexLLLMathlib](https://github.com/leanprover/hex-lll-mathlib) |
 
 Development of the full project (including unreleased libraries) happens in the
 [`hex-dev`](https://github.com/kim-em/hex-dev) monorepo.
