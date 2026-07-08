@@ -28,12 +28,12 @@ rev = "06acf34175d105ef322e24a60efeba1b0d8460bf"
 [[require]]
 name = "HexLLL"
 git = "https://github.com/leanprover/hex-lll.git"
-rev = "ea9b5811ffb5c888eb3e71485a649aaa40a0797a"
+rev = "a73f188bbd7ea48c4a1bb1e6d608b4f131026512"
 
 [[require]]
 name = "HexLLLMathlib"
 git = "https://github.com/leanprover/hex-lll-mathlib.git"
-rev = "a0f49029704463424b4e3fe8ee8fdd7eeb8ddff5"
+rev = "c10d6681dee9a4f963c1035bcbe34fc3eb60a769"
 
 [[lean_lib]]
 name = "Hex"
