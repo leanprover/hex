@@ -8,272 +8,272 @@ defaultTargets = ["Hex"]
 [[require]]
 name = "HexBasic"
 git = "https://github.com/leanprover/hex-basic.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexArith"
 git = "https://github.com/leanprover/hex-arith.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPrimality"
 git = "https://github.com/leanprover/hex-primality.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPrimalityMathlib"
 git = "https://github.com/leanprover/hex-primality-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPoly"
 git = "https://github.com/leanprover/hex-poly.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexMvPoly"
 git = "https://github.com/leanprover/hex-mv-poly.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexModArith"
 git = "https://github.com/leanprover/hex-mod-arith.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexSparsePoly"
 git = "https://github.com/leanprover/hex-sparse-poly.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPolyMathlib"
 git = "https://github.com/leanprover/hex-poly-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexSparsePolyMathlib"
 git = "https://github.com/leanprover/hex-sparse-poly-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexMvPolyMathlib"
 git = "https://github.com/leanprover/hex-mv-poly-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPolyFp"
 git = "https://github.com/leanprover/hex-poly-fp.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPolyZ"
 git = "https://github.com/leanprover/hex-poly-z.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexModArithMathlib"
 git = "https://github.com/leanprover/hex-mod-arith-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPolyFpMathlib"
 git = "https://github.com/leanprover/hex-poly-fp-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGFqRing"
 git = "https://github.com/leanprover/hex-gfq-ring.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexHensel"
 git = "https://github.com/leanprover/hex-hensel.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexPolyZMathlib"
 git = "https://github.com/leanprover/hex-poly-z-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexHenselMathlib"
 git = "https://github.com/leanprover/hex-hensel-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRoots"
 git = "https://github.com/leanprover/hex-roots.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRealRoots"
 git = "https://github.com/leanprover/hex-real-roots.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRootsMathlib"
 git = "https://github.com/leanprover/hex-roots-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRealRootsMathlib"
 git = "https://github.com/leanprover/hex-real-roots-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexMatrix"
 git = "https://github.com/leanprover/hex-matrix.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRowReduce"
 git = "https://github.com/leanprover/hex-row-reduce.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBerlekamp"
 git = "https://github.com/leanprover/hex-berlekamp.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexConway"
 git = "https://github.com/leanprover/hex-conway.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGFqField"
 git = "https://github.com/leanprover/hex-gfq-field.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGF2"
 git = "https://github.com/leanprover/hex-gf2.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGF2Mathlib"
 git = "https://github.com/leanprover/hex-gf2-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGFq"
 git = "https://github.com/leanprover/hex-gfq.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGFqMathlib"
 git = "https://github.com/leanprover/hex-gfq-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexDeterminant"
 git = "https://github.com/leanprover/hex-determinant.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBareiss"
 git = "https://github.com/leanprover/hex-bareiss.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexMatrixMathlib"
 git = "https://github.com/leanprover/hex-matrix-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRowReduceMathlib"
 git = "https://github.com/leanprover/hex-row-reduce-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexDeterminantMathlib"
 git = "https://github.com/leanprover/hex-determinant-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBareissMathlib"
 git = "https://github.com/leanprover/hex-bareiss-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBerlekampMathlib"
 git = "https://github.com/leanprover/hex-berlekamp-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGramSchmidt"
 git = "https://github.com/leanprover/hex-gram-schmidt.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGramSchmidtMathlib"
 git = "https://github.com/leanprover/hex-gram-schmidt-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexLLL"
 git = "https://github.com/leanprover/hex-lll.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBerlekampZassenhaus"
 git = "https://github.com/leanprover/hex-berlekamp-zassenhaus.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexLLLMathlib"
 git = "https://github.com/leanprover/hex-lll-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexBerlekampZassenhausMathlib"
 git = "https://github.com/leanprover/hex-berlekamp-zassenhaus-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGraphIso"
 git = "https://github.com/leanprover/hex-graph-iso.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexGraphIsoMathlib"
 git = "https://github.com/leanprover/hex-graph-iso-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexResultant"
 git = "https://github.com/leanprover/hex-resultant.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexResultantMathlib"
 git = "https://github.com/leanprover/hex-resultant-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexNumberField"
 git = "https://github.com/leanprover/hex-number-field.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexNumberFieldMathlib"
 git = "https://github.com/leanprover/hex-number-field-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexNumberFieldTower"
 git = "https://github.com/leanprover/hex-number-field-tower.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexNumberFieldTowerMathlib"
 git = "https://github.com/leanprover/hex-number-field-tower-mathlib.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[require]]
 name = "HexRCF"
 git = "https://github.com/leanprover/hex-rcf.git"
-rev = "v0.2.0"
+rev = "v0.3.0"
 
 [[lean_lib]]
 name = "Hex"
