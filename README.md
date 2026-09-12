@@ -75,6 +75,7 @@ library. A library whose subject is a Mathlib-facing tactic, such as
 | Gram-Schmidt | [HexGramSchmidt](https://github.com/leanprover/hex-gram-schmidt) | [HexGramSchmidtMathlib](https://github.com/leanprover/hex-gram-schmidt-mathlib) |
 | LLL lattice reduction | [HexLLL](https://github.com/leanprover/hex-lll) | [HexLLLMathlib](https://github.com/leanprover/hex-lll-mathlib) |
 | Integer polynomial factorization | [HexBerlekampZassenhaus](https://github.com/leanprover/hex-berlekamp-zassenhaus) | [HexBerlekampZassenhausMathlib](https://github.com/leanprover/hex-berlekamp-zassenhaus-mathlib) |
+| Permutation groups | [HexPermGroup](https://github.com/leanprover/hex-perm-group) | [HexPermGroupMathlib](https://github.com/leanprover/hex-perm-group-mathlib) |
 | Graph canonical labelling | [HexGraphIso](https://github.com/leanprover/hex-graph-iso) | [HexGraphIsoMathlib](https://github.com/leanprover/hex-graph-iso-mathlib) |
 | Resultants and discriminants | [HexResultant](https://github.com/leanprover/hex-resultant) | [HexResultantMathlib](https://github.com/leanprover/hex-resultant-mathlib) |
 | Algebraic numbers | [HexNumberField](https://github.com/leanprover/hex-number-field) | [HexNumberFieldMathlib](https://github.com/leanprover/hex-number-field-mathlib) |
@@ -87,6 +88,8 @@ library. A library whose subject is a Mathlib-facing tactic, such as
 <!-- ANNOUNCEMENTS:BEGIN (generated from released.yml; do not edit by hand) -->
 - LLL lattice reduction ([HexLLL](https://github.com/leanprover/hex-lll)): [blog post](https://kim-em.github.io/blog/2026-7-7-lattice-basis-reduction-using-the-hex-lean-library/), [Zulip](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Hex%3A.20a.20computational.20algebra.20library/near/608173688), [LinkedIn](https://www.linkedin.com/posts/kim-morrison-219962b_lattice-basis-reduction-using-the-hex-lean-share-7480672935360266241-WF7o/)
 - Integer polynomial factorization ([HexBerlekampZassenhaus](https://github.com/leanprover/hex-berlekamp-zassenhaus)): [blog post](https://kim-em.github.io/blog/2026-8-10-certified-integer-polynomial-factorization-in-lean/), [Zulip](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Hex%3A.20integer.20polynomial.20factorization/near/615747356), [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7492744920349192193)
+- Graph canonical labelling ([HexGraphIso](https://github.com/leanprover/hex-graph-iso)): [blog post](https://kim-em.github.io/blog/2026-9-5-certified-graph-isomorphism-in-lean/), [Zulip](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Hex.3A.20graph.20isomorphism.20via.20a.20formalization.20of.20.60nauty.60/near/621968237)
+- Algebraic numbers ([HexNumberField](https://github.com/leanprover/hex-number-field)): [blog post](https://kim-em.github.io/blog/2026-9-8-exact-algebraic-numbers-and-number-fields-in-lean/), [Zulip](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Hex.3A.20algebraic.20numbers/near/622699726), [LinkedIn](https://www.linkedin.com/posts/kim-morrison-219962b_lean-p-p-share-7503266578889601024-Cwtx/)
 <!-- ANNOUNCEMENTS:END -->
 
 Development of the full project (including unreleased libraries) happens in the
