@@ -18,8 +18,9 @@ git = "https://github.com/leanprover/hex.git"
 rev = "main"
 ```
 
-Then `import Hex` re-exports every library in the table below at a single
-coherent pinned set:
+The requirement installs the libraries in the table below at a single
+coherent pinned set. The generated `import Hex` umbrella re-exports every
+aggregated library:
 
 ```lean
 import Hex
@@ -51,11 +52,16 @@ library. A library whose subject is a Mathlib-facing tactic, such as
 | Component | Computational | Mathlib layer |
 |---|---|---|
 | Foundations | [HexBasic](https://github.com/leanprover/hex-basic) | n/a |
+| Fixed-precision power series | [HexTruncatedSeries](https://github.com/leanprover/hex-truncated-series) | [HexTruncatedSeriesMathlib](https://github.com/leanprover/hex-truncated-series-mathlib) |
 | Exact word arithmetic | [HexArith](https://github.com/leanprover/hex-arith) | n/a |
+| CRT and rational reconstruction | [HexModular](https://github.com/leanprover/hex-modular) | n/a |
 | Certified primality | [HexPrimality](https://github.com/leanprover/hex-primality) | [HexPrimalityMathlib](https://github.com/leanprover/hex-primality-mathlib) |
+| Bounded elliptic-curve certificates | [HexECPP](https://github.com/leanprover/hex-ecpp) | [HexECPPMathlib](https://github.com/leanprover/hex-ecpp-mathlib) |
 | Dense univariate polynomials | [HexPoly](https://github.com/leanprover/hex-poly) | [HexPolyMathlib](https://github.com/leanprover/hex-poly-mathlib) |
-| Sparse multivariate polynomials | [HexMvPoly](https://github.com/leanprover/hex-mv-poly) | [HexMvPolyMathlib](https://github.com/leanprover/hex-mv-poly-mathlib) |
+| Fast dense-polynomial algorithms | [HexPolyFast](https://github.com/leanprover/hex-poly-fast) | n/a |
 | Modular arithmetic | [HexModArith](https://github.com/leanprover/hex-mod-arith) | [HexModArithMathlib](https://github.com/leanprover/hex-mod-arith-mathlib) |
+| Sparse multivariate polynomials | [HexMvPoly](https://github.com/leanprover/hex-mv-poly) | [HexMvPolyMathlib](https://github.com/leanprover/hex-mv-poly-mathlib) |
+| Matrices | [HexMatrix](https://github.com/leanprover/hex-matrix) | [HexMatrixMathlib](https://github.com/leanprover/hex-matrix-mathlib) |
 | Polynomials over a prime field | [HexPolyFp](https://github.com/leanprover/hex-poly-fp) | [HexPolyFpMathlib](https://github.com/leanprover/hex-poly-fp-mathlib) |
 | Sparse univariate polynomials | [HexSparsePoly](https://github.com/leanprover/hex-sparse-poly) | [HexSparsePolyMathlib](https://github.com/leanprover/hex-sparse-poly-mathlib) |
 | Integer polynomials | [HexPolyZ](https://github.com/leanprover/hex-poly-z) | [HexPolyZMathlib](https://github.com/leanprover/hex-poly-z-mathlib) |
@@ -63,7 +69,6 @@ library. A library whose subject is a Mathlib-facing tactic, such as
 | Hensel lifting | [HexHensel](https://github.com/leanprover/hex-hensel) | [HexHenselMathlib](https://github.com/leanprover/hex-hensel-mathlib) |
 | Complex root isolation | [HexRoots](https://github.com/leanprover/hex-roots) | [HexRootsMathlib](https://github.com/leanprover/hex-roots-mathlib) |
 | Real root isolation | [HexRealRoots](https://github.com/leanprover/hex-real-roots) | [HexRealRootsMathlib](https://github.com/leanprover/hex-real-roots-mathlib) |
-| Matrices | [HexMatrix](https://github.com/leanprover/hex-matrix) | [HexMatrixMathlib](https://github.com/leanprover/hex-matrix-mathlib) |
 | Row reduction | [HexRowReduce](https://github.com/leanprover/hex-row-reduce) | [HexRowReduceMathlib](https://github.com/leanprover/hex-row-reduce-mathlib) |
 | Finite-field factorization | [HexBerlekamp](https://github.com/leanprover/hex-berlekamp) | [HexBerlekampMathlib](https://github.com/leanprover/hex-berlekamp-mathlib) |
 | Conway polynomials | [HexConway](https://github.com/leanprover/hex-conway) | n/a |
